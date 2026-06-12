@@ -5,21 +5,21 @@
 class Fngr < Formula
   desc "Command-line journal for logging events with FTS, tags, and trees."
   homepage "https://github.com/monolithiclab/fngr"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/monolithiclab/fngr/releases/download/v0.0.1/fngr_0.0.1_darwin_amd64.tar.gz"
-      sha256 "cd869bf465ce63fbbdb8c7b68055df0ce830fc6bd40cd73db9caad5e31475e30"
+      url "https://github.com/monolithiclab/fngr/releases/download/v0.0.2/fngr_0.0.2_darwin_amd64.tar.gz"
+      sha256 "8aecefb3c1fc627b981a2a63dd0cd967867d4bebe1f1b2353ea728b0cd128dc6"
 
       define_method(:install) do
         bin.install "fngr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/monolithiclab/fngr/releases/download/v0.0.1/fngr_0.0.1_darwin_arm64.tar.gz"
-      sha256 "216bad436d4ce0524eb3d31be0750c4c6dbb96c150d838f233698f473e7d1153"
+      url "https://github.com/monolithiclab/fngr/releases/download/v0.0.2/fngr_0.0.2_darwin_arm64.tar.gz"
+      sha256 "4c790ce01112183ff5eee0932e6cb3e547d109cd0393c0c9cb36529ef2898cff"
 
       define_method(:install) do
         bin.install "fngr"
@@ -29,15 +29,15 @@ class Fngr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/monolithiclab/fngr/releases/download/v0.0.1/fngr_0.0.1_linux_amd64.tar.gz"
-      sha256 "dfdaaedf94f299de98522ae675bbfd9e1c5cc0e1453f3ac315f0d93ed6c14747"
+      url "https://github.com/monolithiclab/fngr/releases/download/v0.0.2/fngr_0.0.2_linux_amd64.tar.gz"
+      sha256 "f043fe1da62e20639c258e14a541d37160788515fa7030eaf2b400bb75f68586"
       define_method(:install) do
         bin.install "fngr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/monolithiclab/fngr/releases/download/v0.0.1/fngr_0.0.1_linux_arm64.tar.gz"
-      sha256 "baf4d04ee0a4e1e4dcb27cd2ea6412e01961d5c9cd96c2923ad12335e740d9ca"
+      url "https://github.com/monolithiclab/fngr/releases/download/v0.0.2/fngr_0.0.2_linux_arm64.tar.gz"
+      sha256 "c233ede6d338aec26d16de297f316fb398840db1886feb962de23b4609fa65fe"
       define_method(:install) do
         bin.install "fngr"
       end
