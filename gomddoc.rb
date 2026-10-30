@@ -5,21 +5,21 @@
 class Gomddoc < Formula
   desc "Production-ready, git-native HTTP server that serves Markdown files as HTML."
   homepage "https://github.com/monolithiclab/gomddoc"
-  version "0.2.1"
+  version "0.3.0"
   license "PolyForm-Noncommercial-1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/monolithiclab/gomddoc/releases/download/v0.2.1/gomddoc_0.2.1_darwin_amd64.tar.gz"
-      sha256 "97c40fa2d84a4d9b374cdcea8527fca6284897abe305461905f9e9d8df2e2dc4"
+      url "https://github.com/monolithiclab/gomddoc/releases/download/v0.3.0/gomddoc_0.3.0_darwin_amd64.tar.gz"
+      sha256 "bb734ee51a866b94bb79cca399950f3e4c4436cea571c3a01d8a22c1a0b3e5e4"
 
       define_method(:install) do
         bin.install "gomddoc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/monolithiclab/gomddoc/releases/download/v0.2.1/gomddoc_0.2.1_darwin_arm64.tar.gz"
-      sha256 "a7e0eab6ed5473d8bf3d0a4090dc4ab4bc0c521960aa862df7919db296b46293"
+      url "https://github.com/monolithiclab/gomddoc/releases/download/v0.3.0/gomddoc_0.3.0_darwin_arm64.tar.gz"
+      sha256 "fbf39b6d0ee2303ae246a3b1b485b895c1a383afa503c2c5eedfe80fb2ddea31"
 
       define_method(:install) do
         bin.install "gomddoc"
@@ -29,15 +29,15 @@ class Gomddoc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/monolithiclab/gomddoc/releases/download/v0.2.1/gomddoc_0.2.1_linux_amd64.tar.gz"
-      sha256 "06f66ec806f7b0f96babb323adef05b4edb509e07691d1db8d9396676561e607"
+      url "https://github.com/monolithiclab/gomddoc/releases/download/v0.3.0/gomddoc_0.3.0_linux_amd64.tar.gz"
+      sha256 "e6e9d1880b49c3da324a19265b9901220746415c8689fa0a85ca1bb8b51b5127"
       define_method(:install) do
         bin.install "gomddoc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/monolithiclab/gomddoc/releases/download/v0.2.1/gomddoc_0.2.1_linux_arm64.tar.gz"
-      sha256 "99eabee431294cdb6e36029f549ac01ea29801879d45db1e3145ce96512a4120"
+      url "https://github.com/monolithiclab/gomddoc/releases/download/v0.3.0/gomddoc_0.3.0_linux_arm64.tar.gz"
+      sha256 "ba1c5861118e80bc6e2433066d377e5985d637e9619c90ae8cd8e1f6ed5e66f3"
       define_method(:install) do
         bin.install "gomddoc"
       end
